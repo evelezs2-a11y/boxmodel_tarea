@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- ESTA LÍNEA ES LA MÁS IMPORTANTE PARA MÓVILES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada - 404</title>
+    <style>
+        /* Estilos base (Móvil primero) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px; /* Padding para que el contenido no toque los bordes en celular */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .contenedor-error {
+            max-width: 500px; /* Evita que se estire mucho en PC */
+            width: 100%;
+        }
+
+        h1 {
+            /* Usamos 'vw' (viewport width) para que el tamaño del texto se adapte a la pantalla */
+            font-size: 20vw; 
+            margin: 0;
+            color: #0078d4; /* Color corporativo Azure */
+            line-height: 1;
+        }
+
+        p.titulo-error {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        p.mensaje {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .boton-inicio {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #0078d4;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            /* Asegura que sea fácil de tocar con el dedo */
+            min-width: 150px; 
+        }
+
+        .boton-inicio:hover {
+            background-color: #005a9e;
+        }
+
+        /* Media Query para pantallas más grandes (Tablets y PC) */
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 8rem; /* Tamaño fijo en pantallas grandes */
+            }
+            p.titulo-error {
+                font-size: 2rem;
+            }
+            p.mensaje {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-error">
+        <h1>404</h1>
+        <p class="titulo-error">¡Oops! Página no encontrada</p>
+        <p class="mensaje">Lo sentimos, no pudimos encontrar la página que buscas. Es posible que la dirección sea incorrecta o que la página haya sido movida.</p>
+        <a href="index.html" class="boton-inicio">Volver al inicio</a>
+    </div>
+</body>
+</html>
